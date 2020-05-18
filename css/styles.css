@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-top: 5px solid rgb(255, 57, 128);
+  background-color: rgb(180, 100, 129);
+  align-items: center;
+  width: 97%;
+  height: 80px;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  padding-right: 10px;
+  margin-left: 20px;
+  animation: latir infinite 3s linear;
+}
+
+@keyframes latir {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+
+  55% {
+    transform: scale(0.9, 0.9);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.menu {
+  margin: 0 auto;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  padding-left: 20px;
+  list-style: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.menu ul li:hover {
+  color: rgb(116, 33, 63);
+}
+
+#fotos {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#title img {
+  width: 50px;
+  padding-left: 10px;
+}
+
+.foto {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.foto img {
+  width: 500px;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.foto-inversa {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.foto-inversa img {
+  width: 500px;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.nosotros {
+  width: 500px;
+}
+
+#fotos h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#felicidades {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#felicidades img {
+  width: 100px;
+}
+
+#footer {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(180, 100, 129);
+  text-align: center;
+  border-bottom: 5px solid rgb(255, 57, 128);
+}
+
+#footer p {
+  padding: 32px;
+}
+
+#footer p a {
+  text-decoration: none;
+  color: rgb(163, 35, 35);
+}
+
+/*media*/
+
+@media (max-width: 1164px) {
+  .foto img {
+    width: 400px;
+  }
+
+  .foto-inversa img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 946px) {
+  #header {
+    width: 96%;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .menu ul li {
+    font-size: 18px;
+  }
+
+  .foto img {
+    width: 350px;
+  }
+
+  .foto-inversa img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 868px) {
+  .foto img {
+    width: 300px;
+  }
+
+  .foto-inversa img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 790px) {
+  .foto {
+    display: flex;
+  }
+
+  .foto-inversa {
+    display: flex;
+  }
+}
+
+@media (max-width: 692px) {
+  .logo img {
+    width: 55px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .menu ul li {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  #fotos h3 {
+    font-size: 23px;
+  }
+
+  #felicidades img {
+    width: 70px;
+  }
+}
+
+@media (max-width: 558px) {
+  #header {
+    width: 92%;
+  }
+}
+
+@media (max-width: 500px) {
+  #header {
+    height: 50px;
+  }
+
+  .logo img {
+    width: 50px;
+    margin-left: 10px;
+  }
+
+  .logo h1 {
+    font-size: 17px;
+  }
+
+  .menu ul li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 456px) {
+  .menu ul li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 417px) {
+  .logo img {
+    width: 45px;
+    margin-left: 0px;
+  }
+
+  .menu ul li {
+    font-size: 11px;
+  }
+
+  #fotos h3 {
+    font-size: 19px;
+  }
+
+  #felicidades img {
+    width: 60px;
+  }
+}
+
+@media (max-width: 376px) {
+  #header {
+    display: grid;
+    grid-template-columns: none;
+    width: 89%;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .logo h1 {
+    font-size: 17px;
+  }
+
+  .logo img {
+    width: 55px;
+    margin-left: 0px;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .foto img {
+    width: 650px;
+    padding: 25px;
+  }
+
+  .foto-inversa img {
+    width: 500px;
+    padding: 25px;
+  }
+
+  #fotos h3 {
+    font-size: 17px;
+  }
+
+  #felicidades img {
+    width: 56px;
+  }
+}
+
+@media (max-width: 360px) {
+  #header {
+    display: grid;
+    grid-template-columns: none;
+    width: 89%;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .logo h1 {
+    font-size: 17px;
+  }
+
+  .logo img {
+    width: 55px;
+    margin-left: 0px;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .foto img {
+    width: 650px;
+    padding: 25px;
+  }
+
+  .foto-inversa img {
+    width: 500px;
+    padding: 25px;
+  }
+
+  #fotos h3 {
+    font-size: 17px;
+  }
+
+  #felicidades img {
+    width: 56px;
+  }
+}
